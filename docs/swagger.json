@@ -121,25 +121,22 @@
             }
          }
       },
-      "/tutorials/steps/{tutorialId}": {
+      "/tutorialsteps": {
          "get": {
             "description": "Returns tutorial steps and animation sequences given a tutorial id",
             "operationId": "TutorialStepsGetRoute",
             "produces": ["application/json"],
-            "parameters": [{
-               "name": "tutorialId",
-               "in": "path",
-               "required": true,
-               "type": "integer",
-               "format": "int32",
-               "description": "ID of tutorial"
-            }, {
-               "name": "languageKey",
-               "in": "query",
-               "required": false,
-               "type": "integer",
-               "format": "int32",
-               "description": "Language to return 1 - En , 2 - Sp, 3 - informal SP"
+            "parameters": [
+               {
+                  "$ref": "#/parameters/languageParam"
+               },
+               {
+                  "name": "tutorialId",
+                  "in": "query",
+                  "required": true,
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "ID of tutorial"
             }],
             "responses": {
                "200": {
