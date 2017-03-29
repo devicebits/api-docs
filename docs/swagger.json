@@ -6,7 +6,7 @@
       "description": "This is the webservice that DeviceBits and Clients use to access all \navailable content that DeviceBits produces. This includes Phone information, \nTutorials, FAQs, TroubleShooting Guides, and Videos. \n\nFor access or more information on DeviceBits please contact: sales@devicebits.com.\n\nYou can try all HTTP operations described in this Swagger spec.\n"
    },
    "host": "api.devicebits.com",
-   "basePath": "/",
+   "basePath": "/v1/",
    "schemes": ["https"],
    "consumes": ["application/json"],
    "produces": ["application/json"],
